@@ -11,7 +11,7 @@ android {
 
     defaultConfig {
         applicationId = "com.azimjonc.projects.caffeeshop"
-        minSdk = 21
+        minSdk = 23 // Increase minSdkVersion to 23
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -45,11 +45,14 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+    implementation ("com.google.firebase:firebase-auth:23.0.0") // Use an older version
     implementation(libs.firebase.analytics)
-    implementation(libs.firebase.auth)
     implementation(libs.firebase.database)
-    // implementation(libs.firebase.crashlytics) // Disable Crashlytics dependency
+    // implementation(libs.firebase.crashlytics) // Removed Crashlytics dependency
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+    // Import the BoM for the Firebase platform
+    implementation(platform("com.google.firebase:firebase-bom:33.1.0"))
 }

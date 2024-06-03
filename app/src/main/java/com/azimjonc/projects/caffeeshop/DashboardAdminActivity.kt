@@ -28,9 +28,16 @@ class DashboardAdminActivity : AppCompatActivity() {
 
 
 //        handle click, logout
-        binding.logoutBtn.setOnClickListener{
+        binding.logoutBtn.setOnClickListener {
             firebaseAuth.signOut()
             checkUser()
+        }
+
+
+//        handle click, start add category page
+
+        binding.addCategoryBtn.setOnClickListener {
+            startActivity(Intent(this, CategoryAddActivity::class.java))
         }
 
 
@@ -43,7 +50,7 @@ class DashboardAdminActivity : AppCompatActivity() {
 //            not logged, in goto main screen
             startActivity(Intent(this, MainActivity::class.java))
             finish()
-        }else{
+        } else {
 //            logged in, get and show user info
             val email = firebaseUser.email
 //            set to text view  of toolbar
