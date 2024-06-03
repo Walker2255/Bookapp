@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Book app</string>
+    <string name="welcome_app">Welcome to Book App</string>
+    <string name="login">Login</string>
+    <string name="continue_without_login">Continue without login</string>
+    <string name="please_login">Please Login</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="new_user_signup">New User? <b>SignUp</b></string>
+    <string name="create_new_account">Create New Account</string>
+    <string name="name">Name</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="register">Register</string>
+    <string name="dashboard_user">Dashboard User</string>
+    <string name="abs_example_com">abs@example.com</string>
+    <string name="dashboard_admin">Dashboard Admin</string>
+</resources>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "807358782449",
+    "project_id": "testapi-9d2b0",
+    "storage_bucket": "testapi-9d2b0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:807358782449:android:4bc59d39707d53f53a4250",
+        "android_client_info": {
+          "package_name": "com.azimjonc.projects.caffeeshop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "807358782449-h5bm12m1fbdr8utbl8dsq1d90rp4k1ct.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALCKP91RrOHBWm_-fY-LbXiZZ9TrmWH0E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "807358782449-h5bm12m1fbdr8utbl8dsq1d90rp4k1ct.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
