@@ -49,7 +49,7 @@ class DashboardAdminActivity : AppCompatActivity() {
 //                called as and when user type anything
                 try {
                     adapterCategory.filter.filter(s)
-                }catch (e:Exception){
+                } catch (e: Exception) {
 
                 }
             }
@@ -71,6 +71,11 @@ class DashboardAdminActivity : AppCompatActivity() {
 
         binding.addCategoryBtn.setOnClickListener {
             startActivity(Intent(this, CategoryAddActivity::class.java))
+        }
+
+//        handle click, start add pdf page
+        binding.addPdfFab.setOnClickListener {
+            startActivity(Intent(this, PdfAddActivity::class.java))
         }
 
 

@@ -48,6 +48,7 @@ dependencies {
     implementation ("com.google.firebase:firebase-auth:23.0.0") // Use an older version
     implementation(libs.firebase.analytics)
     implementation(libs.firebase.database)
+    implementation(libs.firebase.storage)
     // implementation(libs.firebase.crashlytics) // Removed Crashlytics dependency
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
