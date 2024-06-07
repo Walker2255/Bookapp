@@ -45,14 +45,18 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
-    implementation ("com.google.firebase:firebase-auth:23.0.0") // Use an older version
+    implementation("com.google.firebase:firebase-auth:23.0.0") // Use an older version
     implementation(libs.firebase.analytics)
     implementation(libs.firebase.database)
     implementation(libs.firebase.storage)
+
     // implementation(libs.firebase.crashlytics) // Removed Crashlytics dependency
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+    // pdf library
+    implementation("com.github.barteksc:android-pdf-viewer:2.8.2")
 
     // Import the BoM for the Firebase platform
     implementation(platform("com.google.firebase:firebase-bom:33.1.0"))

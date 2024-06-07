@@ -1,6 +1,7 @@
 package com.azimjonc.projects.caffeeshop
 
 import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.Filter
@@ -34,7 +35,10 @@ class AdapterCategory(
     override fun onBindViewHolder(holder: HolderCategory, position: Int) {
         // get data
         val model = categoryArrayList[position]
+        val id = model.id
         val category = model.category
+        val uid = model.uid
+        val timestamp = model.timestamp
 
         // set data
         holder.categoryTv.text = category
@@ -54,6 +58,14 @@ class AdapterCategory(
                 }
             builder.show()  // show the dialog
         }
+        // handle click, start pdf list admin activity, also pas pdf id, title
+        holder.itemView.setOnClickListener {
+            val intent = Intent(context, PdfListAdminActivity::class.java)
+            intent.putExtra("categoryId", id)
+            intent.putExtra("category", category)
+            context.startActivity(intent)
+
+        }
     }
 
     private fun deleteCategory(model: ModelCategory) {
@@ -67,7 +79,8 @@ class AdapterCategory(
                 Toast.makeText(context, "Deleted...", Toast.LENGTH_SHORT).show()
             }
             .addOnFailureListener { e ->
-                Toast.makeText(context, "Unable to delete due to ${e.message}", Toast.LENGTH_SHORT).show()
+                Toast.makeText(context, "Unable to delete due to ${e.message}", Toast.LENGTH_SHORT)
+                    .show()
             }
     }
 
